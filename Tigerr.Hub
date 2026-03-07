@@ -1,6 +1,6 @@
 local v14 = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))();
 local v15 = v14:CreateWindow({
-    Title = "ThienDucScript Hub-Blox Fruit [ Premium ]",-- thay tên bạn muốn đặt
+    Title = "The Bluc Mafia [ Premium ]",-- thay tên bạn muốn đặt
     SubTitle = "By ThienDuc",-- tên bạn
     TabWidth = 160,
     Theme = "Dark",--màu
@@ -9026,4 +9026,5 @@ spawn(function()
         end
     end
 end);
+
 
