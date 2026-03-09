@@ -1,7 +1,7 @@
 local v14 = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))();
 local v15 = v14:CreateWindow({
     Title = "HỔ BÁO TIGER [ Premium ]",-- thay tên bạn muốn đặt
-    SubTitle = "By ThienDuc",-- tên bạn
+    SubTitle = "By The Blue MC",-- tên bạn
     TabWidth = 160,
     Theme = "Dark",--màu
     Acrylic = false,
@@ -2414,7 +2414,7 @@ spawn(function()
         if _G.FastAttackStrix_Mode then
             pcall(function()
                 if (_G.FastAttackStrix_Mode == "Super Fast Attack") then
-                    _G.Fast_Delay = 2e-1;
+                    _G.Fast_Delay = 1e-1;
                 end
             end);
         end
@@ -9026,6 +9026,7 @@ spawn(function()
         end
     end
 end);
+
 
 
 
