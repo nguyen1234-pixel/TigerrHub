@@ -2241,16 +2241,16 @@ spawn(function()
 end);
 spawn(function()
     while wait() do
-        Type = 0.5;
-        wait(0.2);
-        Type = 0.3;
-        wait(0.2);
-        Type = 0.5;
-        wait(0.5);
-        Type = 0.2;
-        wait(0.1);
+        Type = 1;
+        wait(1);
+        Type = 0.1;
+        wait(1);
+        Type = 0.05;
+        wait(1);
+        Type = 0.9;
+        wait(1);
         Type = 0.6;
-        wait(0.1);
+        wait(2);
     end
 end);
 function AutoHaki()
@@ -9026,6 +9026,7 @@ spawn(function()
         end
     end
 end);
+
 
 
 
