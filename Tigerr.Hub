@@ -1,6 +1,6 @@
 local v14 = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))();
 local v15 = v14:CreateWindow({
-    Title = "The Bluc Mafia [ Premium ]",-- thay tên bạn muốn đặt
+    Title = "HỔ BÁO TIGER [ Premium ]",-- thay tên bạn muốn đặt
     SubTitle = "By ThienDuc",-- tên bạn
     TabWidth = 160,
     Theme = "Dark",--màu
@@ -2241,15 +2241,15 @@ spawn(function()
 end);
 spawn(function()
     while wait() do
-        Type = 1;
+        Type = 0.5;
+        wait(0.2);
+        Type = 0.3;
+        wait(0.2);
+        Type = 0.5;
+        wait(0.5);
+        Type = 0.2;
         wait(0.1);
-        Type = 1;
-        wait(0.1);
-        Type = 1;
-        wait(0.1);
-        Type = 1;
-        wait(0.1);
-        Type = 1;
+        Type = 0.6;
         wait(0.1);
     end
 end);
@@ -2414,7 +2414,7 @@ spawn(function()
         if _G.FastAttackStrix_Mode then
             pcall(function()
                 if (_G.FastAttackStrix_Mode == "Super Fast Attack") then
-                    _G.Fast_Delay = 1e-9;
+                    _G.Fast_Delay = 2e-1;
                 end
             end);
         end
@@ -9026,5 +9026,6 @@ spawn(function()
         end
     end
 end);
+
 
 
