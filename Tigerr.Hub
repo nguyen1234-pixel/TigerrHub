@@ -1,9 +1,9 @@
 local v14 = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))();
 local v15 = v14:CreateWindow({
-    Title = "HỔ BÁO TIGER [ Premium ]",-- thay tên bạn muốn đặt
+    Title = " The Blue [ Premium ]",-- thay tên bạn muốn đặt
     SubTitle = "By The Blue MC",-- tên bạn
     TabWidth = 160,
-    Theme = "Dark",--màu
+    Theme = "Blue",--màu
     Acrylic = false,
     Size = UDim2.fromOffset(500, 320),
     MinimizeKey = Enum.KeyCode.End
@@ -9026,6 +9026,7 @@ spawn(function()
         end
     end
 end);
+
 
 
 
