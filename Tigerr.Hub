@@ -2467,7 +2467,7 @@ task.spawn(function()
     end
 end);
 local v49 = v16.Main:AddToggle("ToggleLevel", {
-    Title = "Auto Farm Level",
+    Title = "Cày Cấp",
     Description = "",
     Default = false
 });
@@ -2527,7 +2527,7 @@ spawn(function()
     end
 end);
 local v50 = v16.Main:AddToggle("ToggleMobAura", {
-    Title = "Auto Farm Nearest",
+    Title = "Cày Quái Gần",
     Description = "",
     Default = false
 });
@@ -2573,7 +2573,7 @@ spawn(function()
     end
 end);
 local v51 = v16.Main:AddToggle("ToggleCastleRaid", {
-    Title = "Auto Farm Pirates",
+    Title = "Đánh Hải Tặc",
     Description = "",
     Default = false
 });
@@ -2661,7 +2661,7 @@ spawn(function()
     end
 end);
 local v55 = v16.Main:AddToggle("ToggleCollectChest", {
-    Title = "Auto Farm Chest",
+    Title = "Nhặt Rương",
     Description = "",
     Default = false
 });
@@ -2695,7 +2695,7 @@ spawn(function()
 end);
 local v56 = v16.Main:AddSection("Mastery");
 local v57 = v16.Main:AddDropdown("DropdownMastery", {
-    Title = "Auto Farm Mastery",
+    Title = "Cày Mastery",
     Description = "",
     Values = {
         "Near Mobs"
@@ -2708,7 +2708,7 @@ v57:OnChanged(function(v249)
     TypeMastery = v249;
 end);
 local v58 = v16.Main:AddToggle("ToggleMasteryFruit", {
-    Title = "Auto Mastery Fruit",
+    Title = "Cày Mastery Trái",
     Description = "",
     Default = false
 });
@@ -2717,7 +2717,7 @@ v58:OnChanged(function(v250)
 end);
 v17.ToggleMasteryFruit:SetValue(false);
 local v59 = v16.Main:AddSlider("SliderHealt", {
-    Title = "Mob HP",
+    Title = "Quái HP",
     Description = "",
     Default = 20,
     Min = 0,
@@ -2831,7 +2831,7 @@ if Sea3 then
         end);
     end);
     local v486 = v16.Main:AddToggle("ToggleBone", {
-        Title = "Auto Farm Bone",
+        Title = "Cày Xương",
         Description = "",
         Default = false
     });
@@ -2929,7 +2929,7 @@ if Sea3 then
         end
     end);
     local v489 = v16.Main:AddToggle("ToggleRandomBone", {
-        Title = "Random Bones",
+        Title = "Random Xương",
         Description = "",
         Default = false
     });
@@ -2973,7 +2973,7 @@ if Sea3 then
         end
     end);
     local v492 = v16.Main:AddToggle("ToggleCake", {
-        Title = "Auto Cake Prince",
+        Title = "Cày Hoàng tử bánh ngọt",
         Description = "",
         Default = false
     });
@@ -3047,7 +3047,7 @@ if Sea3 then
         end
     end);
     local v494 = v16.Main:AddToggle("ToggleDoughKing", {
-        Title = "Auto Dough King",
+        Title = "Cày Vua Bột",
         Description = "",
         Default = false
     });
@@ -3087,9 +3087,9 @@ if Sea3 then
         end
     end);
     local v495 = v16.Main:AddToggle("ToggleSpawnCake", {
-        Title = "Spawm Cake Prince",
+        Title = "Triệu Hồi Hoàng Tử Bột",
         Description = "",
-        Default = true
+        Default = false
     });
     v495:OnChanged(function(v577)
         _G.SpawnCakePrince = v577;
@@ -3114,7 +3114,7 @@ end);
 if Sea2 then
     local v496 = v16.Main:AddSection("Ectoplasm Farm");
     local v497 = v16.Main:AddToggle("ToggleVatChatKiDi", {
-        Title = "Auto Farm Ectoplasm",
+        Title = "Cày Vật Chất Kì Dị",
         Description = "",
         Default = false
     });
@@ -3217,7 +3217,7 @@ v61:OnChanged(function(v253)
     _G.SelectBoss = v253;
 end);
 local v62 = v16.Main:AddToggle("ToggleAutoFarmBoss", {
-    Title = "Auto Farm Boss",
+    Title = "Cày Boss",
     Description = "",
     Default = false
 });
@@ -3287,7 +3287,7 @@ elseif Sea3 then
     };
 end
 local v64 = v16.Main:AddDropdown("DropdownMaterial", {
-    Title = "Select Material",
+    Title = "Chọn Nguyên Liệu",
     Description = "",
     Values = MaterialList,
     Multi = false,
@@ -3298,7 +3298,7 @@ v64:OnChanged(function(v255)
     SelectMaterial = v255;
 end);
 local v65 = v16.Main:AddToggle("ToggleMaterial", {
-    Title = "Auto Farm Material",
+    Title = "Tự Động Cày Nguyên Liệu",
     Description = "",
     Default = false
 });
@@ -3374,7 +3374,7 @@ if Sea3 then
         end);
     end);
     local v500 = v16.Sea:AddToggle("ToggleEspKitsune", {
-        Title = "Esp Kitsune island",
+        Title : "Tọa Độ Đảo Cáo Quỷ",
         Description = "",
         Default = false
     });
@@ -3418,7 +3418,7 @@ if Sea3 then
         end
     end
     local v501 = v16.Sea:AddToggle("ToggleTPKitsune", {
-        Title = "Fly to Kitsune Island",
+        Title = "Bay Tới Đảo Cáo Quỷ",
         Description = "",
         Default = false
     });
@@ -3446,7 +3446,7 @@ if Sea3 then
         end
     end);
     local v502 = v16.Sea:AddToggle("ToggleCollectAzure", {
-        Title = "Auto Collect Azure Ember",
+        Title = "Nhặt Linh Hồn",
         Description = "",
         Default = false
     });
@@ -3467,7 +3467,7 @@ if Sea3 then
     end);
 end
 v16.Sea:AddButton({
-    Title = "Auto Trade Azure Ember",
+    Title = "Tự Động Trao Đổi Linh Hồn",
     Description = "",
     Callback = function()
         game:GetService("ReplicatedStorage"):WaitForChild("Modules"):WaitForChild("Net"):WaitForChild("RF/KitsuneStatuePray"):InvokeServer();
@@ -3493,7 +3493,7 @@ if Sea3 then
     });
     v509:SetValue(v508);
     local v510 = v16.Sea:AddToggle("AutoFindPrehistoric", {
-        Title = "Auto Find Prehistoric Island",
+        Title = "Tự Động Tìm Đảo Tiền Sử",
         Description = "",
         Default = false
     });
@@ -3587,7 +3587,7 @@ if Sea3 then
         end
     end);
     local v514 = v16.Sea:AddToggle("AutoFindMirage", {
-        Title = "Auto Find Mirage",
+        Title = "Tự Động Tìm Đảo Kì Bí",
         Description = "",
         Default = false
     });
@@ -3681,7 +3681,7 @@ if Sea3 then
         end
     end);
     local v515 = v16.Sea:AddToggle("AutoFindFrozen", {
-        Title = "Auto Find Leviathan Island",
+        Title = "Tự Động Tìm Đảo Leviathan",
         Description = "",
         Default = false
     });
@@ -3775,7 +3775,7 @@ if Sea3 then
         end
     end);
     local v516 = v16.Sea:AddToggle("AutoComeTiki", {
-        Title = "Go Back To Tiki Outpost",
+        Title = "Lái Thuyền Về Tiki Outpost",
         Description = "",
         Default = false
     });
@@ -3817,7 +3817,7 @@ if Sea3 then
         end
     end);
     local v517 = v16.Sea:AddToggle("AutoComeHydra", {
-        Title = "Go Back To Hydra Island",
+        Title = "Lái Thuyền Về Đảo Hydra",
         Description = "",
         Default = false
     });
@@ -3882,7 +3882,7 @@ if Sea3 then
         "MarineSloop"
     };
     local v519 = v16.Sea:AddDropdown("DropdownBoat", {
-        Title = "Select Boat",
+        Title = "Chọn Thuyền",
         Description = "",
         Values = v518,
         Multi = false,
@@ -3924,21 +3924,21 @@ if Sea3 then
         end
     end);
     v16.Sea:AddButton({
-        Title = "Buy Boad",
+        Title = "Mua Thuyền",
         Description = "",
         Callback = function()
             v520(selectedBoat);
         end
     });
     v16.Sea:AddButton({
-        Title = "Fly To My Boat",
+        Title = "Bay Tới Thuyền",
         Description = "",
         Callback = function()
             v521();
         end
     });
     local v522 = v16.Sea:AddToggle("ToggleTerrorshark", {
-        Title = "Attack Terrorshark",
+        Title = "Tấn Công TerrorShark",
         Description = "",
         Default = false
     });
@@ -3976,7 +3976,7 @@ if Sea3 then
         end
     end);
     local v523 = v16.Sea:AddToggle("TogglePiranha", {
-        Title = "Attack Piranha",
+        Title = "Tấn Công Cá Điện",
         Description = "",
         Default = false
     });
@@ -4014,7 +4014,7 @@ if Sea3 then
         end
     end);
     local v524 = v16.Sea:AddToggle("ToggleShark", {
-        Title = "Attack Shark",
+        Title = "Tấn Công Cá Mập",
         Description = "",
         Default = false
     });
@@ -4056,7 +4056,7 @@ if Sea3 then
         end
     end);
     local v525 = v16.Sea:AddToggle("ToggleFishCrew", {
-        Title = "Attack Fish Crew",
+        Title = "Tấn Công Đội Cá",
         Description = "",
         Default = false
     });
@@ -4098,7 +4098,7 @@ if Sea3 then
         end
     end);
     local v526 = v16.Sea:AddToggle("ToggleShip", {
-        Title = "Attack Ship",
+        Title = "Tấn Công Thuyền",
         Description = "",
         Default = false
     });
@@ -4141,7 +4141,7 @@ if Sea3 then
         end
     end);
     local v527 = v16.Sea:AddToggle("ToggleGhostShip", {
-        Title = "Attack Ghost Ship",
+        Title = "Tấn Công Thuyền Ma",
         Description = "",
         Default = false
     });
@@ -4279,7 +4279,7 @@ if Sea3 then
         end
     end);
     local v530 = v16.Main:AddToggle("ToggleElite", {
-        Title = "Auto Elite Hunter",
+        Title = "Tự Động Elite Hunter",
         Description = "",
         Default = false
     });
@@ -4372,7 +4372,7 @@ if Sea3 then
         end);
     end);
     v16.Sea:AddButton({
-        Title = "Fly To The High Mountain",
+        Title = "Bay Tới Núi Cao",
         Description = "",
         Callback = function()
             TweenToHighestPoint();
@@ -4398,7 +4398,7 @@ if Sea3 then
     end
 end
 local v66 = v16.Sea:AddToggle("ToggleTpAdvanced", {
-    Title = "Fly To Advanced Fruit Dealer",
+    Title = "Bay Tới Ông Bán Trái Ác Quỷ Sờ Trái Cam",
     Description = "",
     Default = false
 });
@@ -4419,7 +4419,7 @@ spawn(function()
     end
 end);
 local v67 = v16.Sea:AddToggle("ToggleTweenGear", {
-    Title = "Fly To Gear",
+    Title = "Bay Tới Gear Xanh Đảo Kì Bí",
     Description = "",
     Default = false
 });
@@ -4445,7 +4445,7 @@ spawn(function()
     end);
 end);
 local v68 = v16.Sea:AddToggle("Togglelockmoon", {
-    Title = "Look Moon",
+    Title = "Dí Mắt Vào Trăng",
     Description = "",
     Default = false
 });
@@ -4474,7 +4474,7 @@ spawn(function()
     end
 end);
 local v69 = v16.ITM:AddToggle("ToggleAutoSaber", {
-    Title = "Auto Saber",
+    Title = "Tự Động Saber",
     Description = "",
     Default = false
 });
@@ -4584,7 +4584,7 @@ spawn(function()
     end
 end);
 local v70 = v16.ITM:AddToggle("ToggleAutoPoleV1", {
-    Title = "Auto Pole V1",
+    Title = "Tự Động Pole V1",
     Description = "",
     Default = false
 });
@@ -4626,7 +4626,7 @@ spawn(function()
     end
 end);
 local v72 = v16.ITM:AddToggle("ToggleAutoSaw", {
-    Title = "Auto Shark Saw",
+    Title = "Tự Động Lưỡi Cưa Cá Mập",
     Description = "",
     Default = false
 });
@@ -4668,7 +4668,7 @@ spawn(function()
     end
 end);
 local v73 = v16.ITM:AddToggle("ToggleAutoWarden", {
-    Title = "Auto Warden",
+    Title = "Tự Động Warden",
     Description = "",
     Default = false
 });
@@ -4711,7 +4711,7 @@ spawn(function()
 end);
 if Sea3 then
     local v533 = v16.ITM:AddToggle("ToggleHallow", {
-        Title = "Hallow Scythe",
+        Title = "Tự Động Hallow Sycthe",
         Description = "",
         Default = false
     });
@@ -4827,7 +4827,7 @@ if Sea3 then
         end
     end);
     local v536 = v16.ITM:AddToggle("ToggleHoly", {
-        Title = "Light The Holy Torch",
+        Title = "Thắp Ngọn Đuốc Thánh",
         Description = "",
         Default = false
     });
@@ -4870,7 +4870,7 @@ if Sea3 then
     end);
 end
 local v75 = v16.ITM:AddToggle("ToggleAutoCanvander", {
-    Title = "Auto Canvander",
+    Title = "Tự Động Cavander",
     Description = "",
     Default = false
 });
@@ -4912,7 +4912,7 @@ spawn(function()
     end
 end);
 local v76 = v16.ITM:AddToggle("ToggleAutoMusketeerHat", {
-    Title = "Auto Musketeer Hat",
+    Title = "Tự Động Musketeer Hat",
     Description = "",
     Default = false
 });
@@ -4996,7 +4996,7 @@ spawn(function()
     end);
 end);
 local v77 = v16.ITM:AddToggle("ToggleAutoObservationV2", {
-    Title = "Auto Observation V2",
+    Title = "Tự Động Observation V2",
     Description = "",
     Default = false
 });
@@ -5044,7 +5044,7 @@ spawn(function()
     end
 end);
 local v78 = v16.ITM:AddToggle("ToggleAutoRainbowHaki", {
-    Title = "Auto Rainbow Haki",
+    Title = "Tự Động Rainbow Haki",
     Description = "",
     Default = false
 });
@@ -5169,7 +5169,7 @@ spawn(function()
     end);
 end);
 local v79 = v16.ITM:AddToggle("ToggleAutoSkullGuitar", {
-    Title = "Auto Skull Guitar",
+    Title = "Tự Động Skull Guitar",
     Description = "",
     Default = false
 });
@@ -5292,7 +5292,7 @@ spawn(function()
     end
 end);
 local v80 = v16.ITM:AddToggle("ToggleAutoBuddy", {
-    Title = "Auto Buddy",
+    Title = "Tự Động Buddy",
     Description = "",
     Default = false
 });
@@ -5334,7 +5334,7 @@ spawn(function()
     end
 end);
 local v82 = v16.ITM:AddToggle("ToggleAutoDualKatana", {
-    Title = "Auto CDK",
+    Title = "Tự Động Làm Quest CDK",
     Description = "",
     Default = false
 });
@@ -5764,7 +5764,7 @@ spawn(function()
 end);
 if Sea2 then
     local v537 = v16.ITM:AddToggle("ToggleFactory", {
-        Title = "Auto Factory",
+        Title = "Tự Động Factory",
         Description = "",
         Default = false
     });
@@ -5809,7 +5809,7 @@ if Sea2 then
     end);
 end
 local v83 = v16.ITM:AddToggle("ToggleAutoFarmSwan", {
-    Title = "Auto Swan",
+    Title = "Tự Động Swan",
     Description = "",
     Default = false
 });
@@ -5848,7 +5848,7 @@ spawn(function()
     end);
 end);
 local v84 = v16.ITM:AddToggle("ToggleAutoRengoku", {
-    Title = "Rengoku",
+    Title = "Tự Động Rengoku",
     Description = "",
     Default = false
 });
@@ -5891,7 +5891,7 @@ spawn(function()
 end);
 if (Sea2 or Sea3) then
     local v538 = v16.ITM:AddToggle("ToggleHakiColor", {
-        Title = "Buy Haki Color",
+        Title = "Tự Động Mua Haki Màu",
         Description = "",
         Default = false
     });
@@ -5913,7 +5913,7 @@ if (Sea2 or Sea3) then
 end
 if Sea2 then
     local v539 = v16.Main:AddToggle("ToggleSwordLengend", {
-        Title = "Auto Buy Lengendary Sword",
+        Title = "Tự Động Mua Sword Legendary",
         Description = "",
         Default = false
     });
@@ -5939,7 +5939,7 @@ if Sea2 then
 end
 if Sea2 then
     local v540 = v16.Main:AddToggle("ToggleEvoRace", {
-        Title = "Auto Upgrade Race V2",
+        Title = "Tự Động Nâng Cấp Tộc V2",
         Description = "",
         Default = false
     });
@@ -5998,7 +5998,7 @@ if Sea2 then
     end);
 end
 local v85 = v16.Setting:AddToggle("ToggleAutoT", {
-    Title = "Auto Turn On Race V3",
+    Title = "Tự Động Turn On Race V3",
     Description = "",
     Default = false
 });
@@ -6016,7 +6016,7 @@ spawn(function()
     end
 end);
 local v86 = v16.Setting:AddToggle("ToggleAutoY", {
-    Title = "Auto Turn On Race V4",
+    Title = "Tự Động Turn On Race V4",
     Description = "",
     Default = false
 });
@@ -6059,7 +6059,7 @@ spawn(function()
     end
 end);
 local v88 = v16.Setting:AddToggle("ToggleSaveSpawn", {
-    Title = "Auto Save Spawm Point",
+    Title = "Tự Động Save Spawm Point",
     Description = "",
     Default = false
 });
@@ -6137,7 +6137,7 @@ spawn(function()
     end
 end);
 local v91 = v16.Setting:AddToggle("ToggleRemoveNotify", {
-    Title = "Remove Notify",
+    Title = "Tắt Thông Báo",
     Description = "",
     Default = false
 });
@@ -6155,7 +6155,7 @@ spawn(function()
     end
 end);
 local v92 = v16.Setting:AddToggle("ToggleWhite", {
-    Title = "White Screen",
+    Title = "Màn Hình Trắng",
     Description = "",
     Default = false
 });
@@ -6248,7 +6248,7 @@ spawn(function()
     end
 end);
 local v102 = v16.Status:AddParagraph({
-    Title = "Server time",
+    Title = "Thời Gian Server",
     Content = ""
 });
 local function v103()
@@ -6264,7 +6264,7 @@ spawn(function()
     end
 end);
 local v104 = v16.Status:AddParagraph({
-    Title = "Frozen Dimension",
+    Title = "Đảo Leviathan",
     Content = ""
 });
 spawn(function()
@@ -6426,7 +6426,7 @@ for v308, v309 in pairs(game:GetService("Players"):GetChildren()) do
     table.insert(v112, v309.Name);
 end
 local v113 = v16.Player:AddDropdown("SelectedPly", {
-    Title = "Select Player",
+    Title = "Chọn Người Chơi",
     Description = "",
     Values = v112,
     Multi = false,
@@ -6447,7 +6447,7 @@ v16.Player:AddButton({
     end
 });
 local v114 = v16.Player:AddToggle("ToggleTeleport", {
-    Title = "TP To Player",
+    Title = "Bay Tới Người Chơi",
     Description = "",
     Default = false
 });
@@ -6474,7 +6474,7 @@ spawn(function()
 end);
 local v56 = v16.Player:AddSection("Other");
 local v115 = v16.Player:AddToggle("ToggleNoClip", {
-    Title = "Noclip",
+    Title = "Xuyên Tường",
     Description = "",
     Default = true
 });
@@ -6496,7 +6496,7 @@ spawn(function()
     end);
 end);
 local v116 = v16.Player:AddToggle("ToggleWalkonWater", {
-    Title = "Walk On Water",
+    Title = "Đi Trên Nước",
     Description = "",
     Default = true
 });
@@ -6516,7 +6516,7 @@ spawn(function()
     end
 end);
 local v117 = v16.Player:AddToggle("ToggleEnablePvp", {
-    Title = "Enable PVP",
+    Title = "Bật Pvp",
     Description = "",
     Default = false
 });
@@ -6537,7 +6537,7 @@ spawn(function()
 end);
 local v118 = v16.Teleport:AddSection("Sea");
 local v119 = v16.Teleport:AddToggle("ToggleAutoSea2", {
-    Title = "Auto Sea 2",
+    Title = "Tự Động Sea 2",
     Description = "",
     Default = false
 });
@@ -6602,7 +6602,7 @@ spawn(function()
     end
 end);
 local v120 = v16.Teleport:AddToggle("ToggleAutoSea3", {
-    Title = "Auto Sea 3",
+    Title = "Tự Động Sea 3",
     Description = "",
     Default = false
 });
@@ -6731,7 +6731,7 @@ elseif Sea3 then
     };
 end
 local v121 = v16.Teleport:AddDropdown("DropdownIsland", {
-    Title = "Select Island",
+    Title = "Chọn Đảo",
     Description = "",
     Values = IslandList,
     Multi = false,
@@ -6849,7 +6849,7 @@ v16.Teleport:AddButton({
     end
 });
 v16.Teleport:AddButton({
-    Title = "Stop Teleport",
+    Title = "Dừng Teleport",
     Description = "",
     Callback = function()
         CancelTween();
@@ -6983,7 +6983,7 @@ v111:OnChanged(function(v338)
 end);
 v17.ToggleFruit:SetValue(false);
 local v124 = v16.Fruit:AddDropdown("DropdownPermanentFruit", {
-    Title = "Select Permanent Fruit",
+    Title = "Chọn Permanent Fruit",
     Description = "",
     Values = Table_DevilFruitSniper,
     Multi = false,
@@ -6994,7 +6994,7 @@ v124:OnChanged(function(v339)
     _G.PermanentFruit = v339;
 end);
 local v125 = v16.Fruit:AddToggle("TogglePermanentFruit", {
-    Title = "Use Permanent Fruit",
+    Title = "Dùng Permanent Fruit",
     Description = "",
     Default = false
 });
@@ -7013,7 +7013,7 @@ v125:OnChanged(function(v340)
 end);
 v17.TogglePermanentFruit:SetValue(false);
 local v126 = v16.Fruit:AddToggle("ToggleStore", {
-    Title = "Store Fruit",
+    Title = "Lưu Trữ Trái",
     Description = "",
     Default = false
 });
@@ -7135,7 +7135,7 @@ spawn(function()
     end
 end);
 local v127 = v16.Fruit:AddToggle("ToggleRandomFruit", {
-    Title = "Random Fruit",
+    Title = "Random Trái",
     Description = "",
     Default = false
 });
@@ -7153,7 +7153,7 @@ spawn(function()
     end);
 end);
 local v128 = v16.Fruit:AddToggle("ToggleCollectTP", {
-    Title = "Get Fruit (TP)",
+    Title = "Lấy Trái (TP)",
     Description = "Risk",
     Default = false
 });
@@ -7173,7 +7173,7 @@ spawn(function()
     end
 end);
 local v129 = v16.Fruit:AddToggle("ToggleCollect", {
-    Title = "Get Fruit",
+    Title = "Lấy Trái",
     Description = "",
     Default = false
 });
@@ -7194,7 +7194,7 @@ spawn(function()
 end);
 local v56 = v16.Fruit:AddSection("Esp");
 local v130 = v16.Fruit:AddToggle("ToggleEspPlayer", {
-    Title = "Player",
+    Title = "Người Chơi",
     Description = "",
     Default = false
 });
@@ -7204,7 +7204,7 @@ v130:OnChanged(function(v345)
 end);
 v17.ToggleEspPlayer:SetValue(false);
 local v131 = v16.Fruit:AddToggle("ToggleEspFruit", {
-    Title = "Fruit",
+    Title = "Trái",
     Description = "",
     Default = false
 });
@@ -7217,7 +7217,7 @@ v131:OnChanged(function(v346)
 end);
 v17.ToggleEspFruit:SetValue(false);
 local v132 = v16.Fruit:AddToggle("ToggleEspIsland", {
-    Title = "Island",
+    Title = "Đảo",
     Description = "",
     Default = false
 });
@@ -7230,7 +7230,7 @@ v132:OnChanged(function(v347)
 end);
 v17.ToggleEspIsland:SetValue(false);
 local v133 = v16.Fruit:AddToggle("ToggleEspFlower", {
-    Title = "Flower",
+    Title = "Bông Hoa",
     Description = "",
     Default = false
 });
@@ -7259,7 +7259,7 @@ spawn(function()
     end
 end);
 local v134 = v16.Fruit:AddToggle("ToggleEspRealFruit", {
-    Title = "Real Fruit",
+    Title = "Thật Trái",
     Description = "",
     Default = false
 });
@@ -7358,7 +7358,7 @@ function UpdateRealFruitEsp()
     end
 end
 local v135 = v16.Fruit:AddToggle("ToggleIslandMirageEsp", {
-    Title = "Mirage Island",
+    Title = "Đảo Kì Bí",
     Description = "",
     Default = false
 });
@@ -7423,7 +7423,7 @@ local v136 = {
     "Dough"
 };
 local v137 = v16.Raid:AddDropdown("DropdownRaid", {
-    Title = "Select Chip",
+    Title = "Chọn Chip",
     Description = "",
     Values = v136,
     Multi = false,
@@ -7434,7 +7434,7 @@ v137:OnChanged(function(v353)
     SelectChip = v353;
 end);
 local v138 = v16.Raid:AddToggle("ToggleBuy", {
-    Title = "Buy Chip",
+    Title = "Mua Chip",
     Description = "",
     Default = false
 });
@@ -7457,7 +7457,7 @@ spawn(function()
     end
 end);
 local v139 = v16.Raid:AddToggle("ToggleStart", {
-    Title = "Auto Start Raid",
+    Title = "Bắt Đầu Raid",
     Description = "",
     Default = false
 });
@@ -7494,7 +7494,7 @@ spawn(function()
     end
 end);
 local v140 = v16.Raid:AddToggle("ToggleNextIsland", {
-    Title = "Auto Farm Raid",
+    Title = "Tự Động Cày Raid",
     Description = "",
     Default = false
 });
@@ -7551,7 +7551,7 @@ spawn(function()
     end
 end);
 local v141 = v16.Raid:AddToggle("ToggleAwake", {
-    Title = "Auto Awakening Fruit",
+    Title = "Tự Động Thức Tỉnh Trái",
     Description = "",
     Default = false
 });
@@ -7569,7 +7569,7 @@ spawn(function()
     end
 end);
 local v142 = v16.Raid:AddToggle("ToggleGetFruit", {
-    Title = "Give Up Normal Fruit—>Raid Chip",
+    Title = "Cho Trái Bình Thường Mua Chip",
     Description = "",
     Default = false
 });
@@ -7671,7 +7671,7 @@ spawn(function()
 end);
 if Sea2 then
     v16.Raid:AddButton({
-        Title = "Fly To The Raid Room",
+        Title = "Bay Tới Phòng Raid",
         Description = "",
         Callback = function()
             Tween2(CFrame.new(- 6438.73535, 250.645355, - 4501.50684));
@@ -7679,7 +7679,7 @@ if Sea2 then
     });
 elseif Sea3 then
     v16.Raid:AddButton({
-        Title = "Fly To The Raid Room",
+        Title = "Bay Tới Phòng Raid",
         Description = "",
         Callback = function()
             game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance", Vector3.new(- 5075.50927734375, 314.5155029296875, - 3150.0224609375));
@@ -7689,7 +7689,7 @@ elseif Sea3 then
 end
 local v56 = v16.Raid:AddSection("Law");
 local v143 = v16.Raid:AddToggle("ToggleLaw", {
-    Title = "Auto Raid Low (Fully)",
+    Title = "Tự Động Raid Low (Fully)",
     Description = "",
     Default = false
 });
@@ -7743,14 +7743,14 @@ spawn(function()
     end);
 end);
 v16.Race:AddButton({
-    Title = "Temple Of Time",
+    Title = "Đền Thời Gian",
     Description = "",
     Callback = function()
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance", Vector3.new(28286.35546875, 14895.3017578125, 102.62469482421875));
     end
 });
 v16.Race:AddButton({
-    Title = "Auto Pull Lever",
+    Title = "Tự Động Pull Lever",
     Description = "",
     Callback = function()
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance", Vector3.new(28286.35546875, 14895.3017578125, 102.62469482421875));
@@ -7758,7 +7758,7 @@ v16.Race:AddButton({
     end
 });
 v16.Race:AddButton({
-    Title = "TP Buy Gear NPC",
+    Title = "Bay Tới Mua Gear",
     Description = "",
     Callback = function()
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance", Vector3.new(28286.35546875, 14895.3017578125, 102.62469482421875));
@@ -7767,7 +7767,7 @@ v16.Race:AddButton({
 });
 local v56 = v16.Race:AddSection("Race");
 v16.Race:AddButton({
-    Title = "Race Door",
+    Title = "Tộc Cửa",
     Description = "",
     Callback = function()
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance", Vector3.new(28286.35546875, 14895.3017578125, 102.62469482421875));
@@ -7922,7 +7922,7 @@ spawn(function()
     end);
 end);
 local v146 = v16.Race:AddToggle("ToggleKillTrial", {
-    Title = "Kill Trial",
+    Title = "Giết Người Chơi Trial",
     Description = "",
     Default = false
 });
@@ -7955,7 +7955,7 @@ spawn(function()
 end);
 local v56 = v16.Race:AddSection("");
 local v147 = v16.Race:AddToggle("ToggleFarmRace", {
-    Title = "Farm Race",
+    Title = "Train Tộc",
     Description = "",
     Default = false
 });
@@ -7986,7 +7986,7 @@ spawn(function()
     end
 end);
 local v149 = v16.Race:AddToggle("ToggleUpgrade", {
-    Title = "Buy Gear",
+    Title = "Mua Gear",
     Description = "",
     Default = false
 });
@@ -8195,7 +8195,7 @@ v16.Shop:AddButton({
     end
 });
 v16.Shop:AddButton({
-    Title = "Change To Ghoul Race",
+    Title = "Thay Đổi Tộc quỷ",
     Description = "",
     Callback = function()
         local v366 = {
@@ -8207,7 +8207,7 @@ v16.Shop:AddButton({
     end
 });
 v16.Shop:AddButton({
-    Title = "Change To Cyborg Race",
+    Title = "Thay Đổi Tộc Cyborg",
     Description = "",
     Callback = function()
         local v367 = {
@@ -8246,7 +8246,7 @@ v16.Misc:AddButton({
     end
 });
 v16.Misc:AddButton({
-    Title = "Hop Server",
+    Title = "Đổi Server",
     Description = "",
     Callback = function()
         Hop();
@@ -8313,14 +8313,14 @@ function Hop()
 end
 local v56 = v16.Misc:AddSection("Team");
 v16.Misc:AddButton({
-    Title = "Pirates",
+    Title = "Hải Tặc",
     Description = "",
     Callback = function()
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("SetTeam", "Pirates");
     end
 });
 v16.Misc:AddButton({
-    Title = "Marines",
+    Title = "Hải Quân",
     Description = "",
     Callback = function()
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("SetTeam", "Marines");
@@ -8371,9 +8371,10 @@ local v150 = {
     "Fudd10",
     "Bignews",
     "SECRET_ADMIN"
+    "LIGHTNINGABUSE"
 };
 v16.Misc:AddButton({
-    Title = "Redeem All Code",
+    Title = "Nhập Tất Cả Code",
     Description = "",
     Callback = function()
         for v559, v560 in ipairs(v150) do
@@ -8398,7 +8399,7 @@ v16.Misc:AddButton({
 });
 local v56 = v16.Misc:AddSection("Awakening");
 v16.Misc:AddButton({
-    Title = "Awakening",
+    Title = "Thức Tỉnh",
     Description = "",
     Callback = function()
         game:GetService("Players").LocalPlayer.PlayerGui.Main.AwakeningToggler.Visible = true;
@@ -8453,7 +8454,7 @@ v16.Misc:AddButton({
     end
 });
 local v153 = v16.Misc:AddToggle("ToggleAntiBand", {
-    Title = "Anti Ban",
+    Title = "Đổi Server Khi Admin Vào",
     Description = "",
     Default = true
 });
@@ -8478,14 +8479,14 @@ spawn(function()
 end);
 local v56 = v16.Sea:AddSection("Leviathan");
 v16.Sea:AddButton({
-    Title = "Buy Leviathan Chip",
+    Title = "Mua Chip Leviathan",
     Description = "",
     Callback = function()
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("InfoLeviathan", "2");
     end
 });
 local v155 = v16.Sea:AddToggle("ToggleTPFrozenDimension", {
-    Title = "Fly To Frozen Dimension",
+    Title = "Bay Tới Đảo Leviathan",
     Description = "",
     Default = false
 });
@@ -8509,7 +8510,7 @@ spawn(function()
 end);
 if Sea3 then
     local v561 = v16.Sea:AddParagraph({
-        Title = "Leviathan Chip Status",
+        Title = "Trạng Thái Chip Leviathan",
         Content = ""
     });
     spawn(function()
@@ -8529,7 +8530,7 @@ if Sea3 then
 end
 local v156 = v16.Sea:AddSection("Draco");
 local v157 = v16.Sea:AddToggle("ToggleBlazeEmber", {
-    Title = "Auto Blaze Ember",
+    Title = "Tự Động Blaze Ember",
     Description = "",
     Default = false
 });
@@ -8546,7 +8547,7 @@ spawn(function()
     end
 end);
 local v158 = v16.Sea:AddToggle("ToggleReceiveQuest", {
-    Title = "Get Blaze Ember Quest",
+    Title = "Blaze Ember Quest",
     Description = "",
     Default = false
 });
@@ -8576,7 +8577,7 @@ v158:OnChanged(function(v388)
     end
 end);
 local v159 = v16.Sea:AddParagraph({
-    Title = "Blaze Ember Quest Status",
+    Title = "Blaze Ember Nhiệm Vụ Trạng Thái",
     Content = ""
 });
 spawn(function()
@@ -8605,7 +8606,7 @@ spawn(function()
     end);
 end);
 local v160 = v16.Sea:AddToggle("ToggleHydraTree", {
-    Title = "Destroy trees at Hydra Island",
+    Title = "Phá Hủy Cây Đảo Hydra",
     Description = "",
     Default = false
 });
@@ -8671,7 +8672,7 @@ spawn(function()
     end
 end);
 v156:AddButton({
-    Title = "Teleport To Dragon Dojo",
+    Title = "Bay Tới Dragon Dojo",
     Description = "",
     Callback = function()
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance", Vector3.new(5661.5322265625, 1013.0907592773438, - 334.9649963378906));
@@ -8679,7 +8680,7 @@ v156:AddButton({
     end
 });
 v156:AddButton({
-    Title = "Craft Volcanic Magnet",
+    Title = "Chế Tạo Volcanic Magnet",
     Description = "",
     Callback = function()
         local v395 = {
@@ -8691,7 +8692,7 @@ v156:AddButton({
     end
 });
 local v164 = v16.Sea:AddToggle("ToggleCollectFireFlowers", {
-    Title = "Collect Fire Flowers",
+    Title = "Nhặt Fire Flowers",
     Description = "",
     Default = false
 });
@@ -8722,7 +8723,7 @@ spawn(function()
     end
 end);
 local v165 = v16.Sea:AddToggle("ToggleWhiteBelt", {
-    Title = "Ato White Belt",
+    Title = "Tự Động White Belt",
     Description = "",
     Default = false
 });
@@ -8751,11 +8752,11 @@ v165:OnChanged(function(v397)
     end
 end);
 local v166 = v16.Sea:AddParagraph({
-    Title = "Draco Race",
+    Title = "Tộc Draco",
     Content = ""
 });
 local v167 = v16.Sea:AddToggle("ToggleTrialTeleport", {
-    Title = "Fly To Trial Door",
+    Title = "Bay Tới Phòng Trial",
     Description = "",
     Default = false
 });
@@ -8789,7 +8790,7 @@ spawn(function()
     end);
 end);
 local v170 = v16.Sea:AddToggle("ToggleTPVolcano", {
-    Title = "Fly To Prehistoric Island",
+    Title = "Bay Tới Đảo Tiền Sử",
     Description = "",
     Default = false
 });
@@ -8818,7 +8819,7 @@ spawn(function()
     end
 end);
 local v171 = v16.Sea:AddToggle("ToggleDefendVolcano", {
-    Title = "Safe",
+    Title = "An Toàn",
     Description = "",
     Default = false
 });
@@ -8826,7 +8827,7 @@ v171:OnChanged(function(v401)
     _G.AutoDefendVolcano = v401;
 end);
 local v107 = v16.Sea:AddToggle("ToggleMelee", {
-    Title = "Use Melee",
+    Title = "Sử Dụng Meele",
     Description = "",
     Default = false
 });
@@ -8834,7 +8835,7 @@ v107:OnChanged(function(v402)
     _G.UseMelee = v402;
 end);
 local v109 = v16.Sea:AddToggle("ToggleSword", {
-    Title = "Use Sword",
+    Title = "Sử Dụng Sword",
     Description = "",
     Default = false
 });
@@ -8842,7 +8843,7 @@ v109:OnChanged(function(v403)
     _G.UseSword = v403;
 end);
 local v110 = v16.Sea:AddToggle("ToggleGun", {
-    Title = "Use Gun",
+    Title = "Sử Dụng Gun",
     Description = "",
     Default = false
 });
@@ -8952,7 +8953,7 @@ spawn(function()
     end
 end);
 local v175 = v16.Sea:AddToggle("ToggleKillAura", {
-    Title = "Attack Golems Aura",
+    Title = "Tấn Công Golems Aura",
     Description = "",
     Default = false
 });
@@ -8979,7 +8980,7 @@ spawn(function()
     end
 end);
 local v176 = v16.Sea:AddToggle("ToggleCollectBone", {
-    Title = "Collect Bone",
+    Title = "Nhặt Bone",
     Description = "",
     Default = false
 });
@@ -8998,7 +8999,7 @@ spawn(function()
     end
 end);
 local v177 = v16.Sea:AddToggle("ToggleCollectEgg", {
-    Title = "Collect Dragon Egg",
+    Title = "Nhặt Dragon Egg",
     Description = "",
     Default = false
 });
@@ -9026,6 +9027,7 @@ spawn(function()
         end
     end
 end);
+
 
 
 
